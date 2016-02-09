@@ -1,0 +1,921 @@
+Script started on Mon Feb  8 14:18:47 2016
+[?1034hbash-3.2$ ls
+2016-02-08.log
+Applications
+Desktop
+Documents
+Downloads
+Library
+Movies
+Music
+Pictures
+Public
+Vagrantfile
+Vagrantfile~
+VirtualBox VMs
+bash_exs
+holbertonschool-higher_level_programming
+python_exs
+bash-3.2$ cd python_exs/
+bash-3.2$ ls
+ex1.py		ex2.py		ex3.py		testscript
+ex1.py~		ex2.py~		ex3.py~
+bash-3.2$ cd ..
+bash-3.2$ ls -l
+total 24
+-rw-r--r--   1 20  HBTN\Domain Users    43 Feb  8 14:18 2016-02-08.log
+drwx------   4 20  HBTN\Domain Users   136 Feb  6 11:13 Applications
+drwx------+  7 20  HBTN\Domain Users   238 Feb  7 22:44 Desktop
+drwx------+  3 20  HBTN\Domain Users   102 Feb  6 11:10 Documents
+drwx------+  4 20  HBTN\Domain Users   136 Feb  7 23:17 Downloads
+drwx------@ 47 20  HBTN\Domain Users  1598 Feb  6 16:32 Library
+drwx------+  3 20  HBTN\Domain Users   102 Feb  6 11:10 Movies
+drwx------+  3 20  HBTN\Domain Users   102 Feb  6 11:10 Music
+drwx------+  3 20  HBTN\Domain Users   102 Feb  6 11:10 Pictures
+drwxr-xr-x+  4 20  HBTN\Domain Users   136 Feb  6 11:10 Public
+-rw-r--r--   1 20  HBTN\Domain Users  3027 Feb  6 16:32 Vagrantfile
+-rw-r--r--   1 20  HBTN\Domain Users  3016 Feb  6 16:32 Vagrantfile~
+drwx------   3 20  HBTN\Domain Users   102 Feb  6 16:32 VirtualBox VMs
+drwxr-xr-x   2 20  HBTN\Domain Users    68 Feb  8 13:16 bash_exs
+drwxr-xr-x   4 20  HBTN\Domain Users   136 Feb  6 15:41 holbertonschool-higher_level_programming
+drwxr-xr-x   9 20  HBTN\Domain Users   306 Feb  8 13:25 python_exs
+bash-3.2$ cd bash_exs/
+bash-3.2$ ls
+bash-3.2$ emacs testscript
+[?1049h[?12;25h[?1h=[H[2J[24d[K[?1l>[?12l[?25h[?1049l[39;49m[?1049h[?12;25h[?1h=[H[2J[>0c[H[2J[24d[K[H[?25l[7mFile Edit Options Buffers Tools Lisp-Interaction Help                           [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction) ----------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[24d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[H
+[?12l[?25h[?12;25h[24d[?25l(New file)[K[H
+[?12l[?25h[?12;25h[24d[?25l(New file)[K[H[7mFile Edit Options Buffers Tools Help                                            [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250mtestscript  [0m[39;49m[30m[48;5;250m   All L1     (Fundamental) ---------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[24d[K[2d[?25l#[23;6H[30m[48;5;250m**[39;49m[2;2H[?12l[?25h[?12;25h[?25l![?12l[?25h[?12;25h[?25l/[?12l[?25h[?12;25h[?25lb[?12l[?25h[?12;25h[?25li[?12l[?25h[?12;25h[?25ln[?12l[?25h[?12;25h[?25lb[?12l[?25h[?12;25h[K[?25l/[?12l[?25h[?12;25h[?25lb[?12l[?25h[?12;25h[?25la[?12l[?25h[?12;25h[?25ls[?12l[?25h[?12;25h[?25lh[?12l[?25h[?12;25h[23;34H[?25l[30m[48;5;250m2[39;49m[H
+
+[?12l[?25h[?12;25h[?25le[?12l[?25h[?12;25h[?25lc[?12l[?25h[?12;25h[?25lh[?12l[?25h[?12;25h[?25lo[?12l[?25h[?12;25h[C[?25l"[?12l[?25h[?12;25h[?25l$[?12l[?25h[?12;25h[?25l0[?12l[?25h[?12;25h[?25l"[?12l[?25h[?12;25h[24;1H[?25l[38;5;20mSave file /Users/20/bash_exs/testscript? (y, n, !, ., q, C-r, d or C-h) [39;49m[?12l[?25h[?12;25h[?25lSave file /Users/20/bash_exs/testscript? (y, n, !, ., q, C-r, d or C-h) y[?12l[?25h[?12;25h[24;4H[?25ling file /Users/20/bash_exs/testscript...[K[3;10H[?12l[?25h[?12;25h[24;1H[?25lWrote /Users/20/bash_exs/testscript[K[3;10H[?12l[?25h[?12;25h[24;1H[K[3;10H[24;1H[K[?1l>[?12l[?25h[?1049l[39;49mbash-3.2$ ./testscript
+bash: ./testscript: Permission denied
+bash-3.2$ ls
+testscript
+bash-3.2$ /usr/bin[K[K[K[K[K[K[K[Kpwd
+/Users/20/bash_exs
+bash-3.2$ /Users/20/bash_exs/testscript
+bash: /Users/20/bash_exs/testscript: Permission denied
+bash-3.2$ chmod testscript 
+usage:	chmod [-fhv] [-R [-H | -L | -P]] [-a | +a | =a  [i][# [ n]]] mode|entry file ...
+	chmod [-fhv] [-R [-H | -L | -P]] [-E | -C | -N | -i | -I] file ...
+bash-3.2$ chmod -x testscript 
+bash-3.2$ ./testscript
+bash: ./testscript: Permission denied
+bash-3.2$ t
+tab2space         texi2dvi          times             traceroute
+tabs              texi2pdf          tkcon             traceroute6
+tail              texindex          tkmib             trap
+talk              text2pcap         tkpp              traptoemail
+tar               textutil          tkpp5.16          treereg
+taskinfo          tfmtodit          tkpp5.18          treereg5.16
+taskpolicy        tftp              tmdiagnose        treereg5.18
+tbl               then              tmutil            trimforce
+tccutil           thermal           tnameserv         troff
+tclsh             tic               toe               true
+tclsh8.4          tidy              top               tset
+tclsh8.5          tiff2icns         tops              tshark
+tcpdump           tiffutil          topsyscall        tsort
+tcsh              time              topsysproc        tty
+tee               timed             touch             type
+telnet            timedc            tput              typeset
+test              timer_analyser.d  tr                
+testrb            timerfires        trace             
+bash-3.2$ t[Kpwd
+/Users/20/bash_exs
+bash-3.2$ ls
+testscript
+bash-3.2$ ./test[K[K[K[K[K[Kt
+tab2space         texi2dvi          times             traceroute
+tabs              texi2pdf          tkcon             traceroute6
+tail              texindex          tkmib             trap
+talk              text2pcap         tkpp              traptoemail
+tar               textutil          tkpp5.16          treereg
+taskinfo          tfmtodit          tkpp5.18          treereg5.16
+taskpolicy        tftp              tmdiagnose        treereg5.18
+tbl               then              tmutil            trimforce
+tccutil           thermal           tnameserv         troff
+tclsh             tic               toe               true
+tclsh8.4          tidy              top               tset
+tclsh8.5          tiff2icns         tops              tshark
+tcpdump           tiffutil          topsyscall        tsort
+tcsh              time              topsysproc        tty
+tee               timed             touch             type
+telnet            timedc            tput              typeset
+test              timer_analyser.d  tr                
+testrb            timerfires        trace             
+bash-3.2$ t
+tab2space         texi2dvi          times             traceroute
+tabs              texi2pdf          tkcon             traceroute6
+tail              texindex          tkmib             trap
+talk              text2pcap         tkpp              traptoemail
+tar               textutil          tkpp5.16          treereg
+taskinfo          tfmtodit          tkpp5.18          treereg5.16
+taskpolicy        tftp              tmdiagnose        treereg5.18
+tbl               then              tmutil            trimforce
+tccutil           thermal           tnameserv         troff
+tclsh             tic               toe               true
+tclsh8.4          tidy              top               tset
+tclsh8.5          tiff2icns         tops              tshark
+tcpdump           tiffutil          topsyscall        tsort
+tcsh              time              topsysproc        tty
+tee               timed             touch             type
+telnet            timedc            tput              typeset
+test              timer_analyser.d  tr                
+testrb            timerfires        trace             
+bash-3.2$ test[K[K[K[K/[Klspwd./testscript[C[C[C[C[C[C[C[C[C[Cchmod -x testscript [3P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/Users/20/bash_exs/testscript
+bash: /Users/20/bash_exs/testscript: Permission denied
+bash-3.2$ echo "$0"
+/bin/bash
+bash-3.2$ cd ~
+bash-3.2$ ls
+2016-02-08.log
+Applications
+Desktop
+Documents
+Downloads
+Library
+Movies
+Music
+Pictures
+Public
+Vagrantfile
+Vagrantfile~
+VirtualBox VMs
+bash_exs
+holbertonschool-higher_level_programming
+python_exs
+bash-3.2$ cd bash_exs/
+bash-3.2$ ls
+testscript
+bash-3.2$ emacs testscript2
+[?1049h[?12;25h[?1h=[H[2J[24d[K[?1l>[?12l[?25h[?1049l[39;49m[?1049h[?12;25h[?1h=[H[2J[>0c[H[2J[24d[K[H[?25l[7mFile Edit Options Buffers Tools Lisp-Interaction Help                           [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction) ----------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[24d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[H
+[?12l[?25h[?12;25h[24d[?25l(New file)[K[H
+[?12l[?25h[?12;25h[24d[?25l(New file)[K[H[7mFile Edit Options Buffers Tools Help                                            [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250mtestscript2 [0m[39;49m[30m[48;5;250m   All L1     (Fundamental) ---------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[24d[K[2d[?25l#[23;6H[30m[48;5;250m**[39;49m[2;2H[?12l[?25h[?12;25h[?25l![?12l[?25h[?12;25h[?25l/[?12l[?25h[?12;25h[?25lb[?12l[?25h[?12;25h[?25li[?12l[?25h[?12;25h[?25ln[?12l[?25h[?12;25h[?25l/[?12l[?25h[?12;25h[?25lb[?12l[?25h[?12;25h[?25la[?12l[?25h[?12;25h[?25ls[?12l[?25h[?12;25h[?25lh[?12l[?25h[?12;25h[23;34H[?25l[30m[48;5;250m2[39;49m[H
+
+[?12l[?25h[?12;25h[?25le[?12l[?25h[?12;25h[?25lc[?12l[?25h[?12;25h[?25lh[?12l[?25h[?12;25h[?25lo[?12l[?25h[?12;25h[23;34H[?25l[30m[48;5;250m3[39;49m[4;1H[?12l[?25h[?12;25h[24d[?25l[38;5;20mSave file /Users/20/bash_exs/testscript2? (y, n, !, ., q, C-r, d or C-h) [39;49m[?12l[?25h[?12;25h[?25lSave file /Users/20/bash_exs/testscript2? (y, n, !, ., q, C-r, d or C-h) y[?12l[?25h[?12;25h[24;4H[?25ling file /Users/20/bash_exs/testscript2...[K[4;1H[?12l[?25h[?12;25h[24d[?25lWrote /Users/20/bash_exs/testscript2[K[4;1H[?12l[?25h[?12;25h[24d[K[4d[24d[K[?1l>[?12l[?25h[?1049l[39;49mbash-3.2$ ./testscript $0
+bash: ./testscript: Permission denied
+bash-3.2$ ./testscript $0[C[C2 $0[C
+bash: ./testscript2: Permission denied
+bash-3.2$ mo[K[Kcm[Khmod +x /tmp[K[Kest[K[K[K[K[Ktescrip[K[K[K[Ktscript2
+bash-3.2$ chmod +x testscript2[C[C[C[C[C[C[C[C[C[C[4P./testscript2 $0
+
+bash-3.2$ ./testscript2 $0"$0[C[C"
+
+bash-3.2$ ./testscript2 "$0"[K[K[K[K[K
+
+bash-3.2$ emacs testscript2
+[?1049h[?12;25h[?1h=[H[2J[24d[K[?1l>[?12l[?25h[?1049l[39;49m[?1049h[?12;25h[?1h=[H[2J[>0c[H[2J[24d[K[H[?25l[7mFile Edit Options Buffers Tools Lisp-Interaction Help                           [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction) ----------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[24d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[H
+[?12l[?25h[?12;25h[24d[?25lSetting up indent for shell type bash[K[H
+[?12l[?25h[?12;25h[24d[?25lIndentation variables are now local.[K[H
+[?12l[?25h[?12;25h[24;13H[?25lsetup for shell type bash[H
+[?12l[?25h[?12;25h[24d[?25lIndentation setup for shell type bash[K[H[7mFile Edit Options Buffers Tools Sh-Script Help                                  [0m[39;49m[27m
+[A
+[38;5;124m#!/bin/[39;49m[38;5;129mbash[39;49m[38;5;124m                                                                     [39;49m
+[A
+[38;5;60mecho[39;49m[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250mtestscript2 [0m[39;49m[30m[48;5;250m   All L1     (Shell-script[bash]) --------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[24d[K[23;34H[?25l[30m[48;5;250m2[39;49m[H
+
+[?12l[?25h[?12;25h[C[C[C[C[23;34H[?25l[30m[48;5;250m3[39;49m[4;1H[?12l[?25h[?12;25h[23;34H[?25l[30m[48;5;250m2[39;49m[3;5H[?12l[?25h[?12;25h[23;6H[?25l[30m[48;5;250m**[39;49m[3;6H[?12l[?25h[?12;25h[?25l[38;5;89m"                                                                          [39;49m
+[3;7H[?12l[?25h[?12;25h[?25l[38;5;89m$[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m0[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m"[39;49m[K[?12l[?25h[?12;25h[24;1H[?25l[38;5;20mSave file /Users/20/bash_exs/testscript2? (y, n, !, ., q, C-r, d or C-h) [39;49m[?12l[?25h[?12;25h[?25lSave file /Users/20/bash_exs/testscript2? (y, n, !, ., q, C-r, d or C-h) y[?12l[?25h[?12;25h[24;4H[?25ling file /Users/20/bash_exs/testscript2...[K[3;10H[?12l[?25h[?12;25h[24;1H[?25lWrote /Users/20/bash_exs/testscript2[K[3;10H[?12l[?25h[?12;25h[24;1H[K[3;10H[24;1H[K[?1l>[?12l[?25h[?1049l[39;49mbash-3.2$ emacs testscript2[C[C[C[C[C[C[C[C[C[C[4P./testscript2
+./testscript2
+bash-3.2$ emacs airth[K[K[K[Krithmeticex[K[K_ex.sh
+[?1049h[?12;25h[?1h=[H[2J[24d[K[?1l>[?12l[?25h[?1049l[39;49m[?1049h[?12;25h[?1h=[H[2J[>0c[H[2J[24d[K[H[?25l[7mFile Edit Options Buffers Tools Lisp-Interaction Help                           [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction) ----------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[24d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[H
+[?12l[?25h[?12;25h[24d[?25l(New file)[K[H
+[?12l[?25h[?12;25h[24d[?25lSetting up indent for shell type sh[H
+[?12l[?25h[?12;25h[24d[?25lIndentation variables are now local.[H
+[?12l[?25h[?12;25h[24;13H[?25lsetup for shell type sh[K[H
+[?12l[?25h[?12;25h[24d[?25lIndentation setup for shell type sh[K[H[7mFile Edit Options Buffers Tools Sh-Script Help                                  [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250marithmetic_ex.sh[0m[39;49m[30m[48;5;250m   All L1     (Shell-script[sh]) ------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[24d[K[2d[?25l[38;5;124m#[39;49m[23;6H[30m[48;5;250m**[39;49m[2;2H[?12l[?25h[?12;25h[?25l[38;5;124m![39;49m[?12l[?25h[?12;25h[?25l[38;5;124m/[39;49m[?12l[?25h[?12;25h[?25l[38;5;129mb[39;49m[?12l[?25h[?12;25h[?25l[38;5;129mi[39;49m[?12l[?25h[?12;25h[?25l[38;5;129mn[39;49m[?12l[?25h[?12;25h[?25l[38;5;129mb[39;49m[?12l[?25h[?12;25h[?25l[38;5;129ma[39;49m[?12l[?25h[?12;25h[?25l[38;5;129ms[39;49m[?12l[?25h[?12;25h[?25l[38;5;129mh[39;49m[?12l[?25h[?12;25h[?25l[38;5;124m                                                                      [39;49m
+[23;38H[30m[48;5;250m2[39;49m[H
+
+[?12l[?25h[?12;25h[23;38H[?25l[30m[48;5;250m3[39;49m[4;1H[?12l[?25h[?12;25h[?25le[?12l[?25h[?12;25h[?25lc[?12l[?25h[?12;25h[?25lh[?12l[?25h[?12;25h[?25l[38;5;60mecho[39;49m[?12l[?25h[?12;25h[C[?25l-[?12l[?25h[?12;25h[?25le[?12l[?25h[?12;25h	[?25l[38;5;89m"[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m\[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m$[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m1[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m=[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m$[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m1[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m"[39;49m[?12l[?25h[?12;25h[23;38H[?25l[30m[48;5;250m4[39;49m[5;1H[?12l[?25h[?12;25h[?25le[?12l[?25h[?12;25h[?25lc[?12l[?25h[?12;25h[?25lh[?12l[?25h[?12;25h[?25l[38;5;60mecho[39;49m[?12l[?25h[?12;25h[C[?25l-[?12l[?25h[?12;25h[?25le[?12l[?25h[?12;25h	[?25l[38;5;89m"[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m\[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m$[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m2[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m=[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m$[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m2[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m"[39;49m[?12l[?25h[?12;25h[23;38H[?25l[30m[48;5;250m5[39;49m[6;1H[?12l[?25h[?12;25h[23;38H[?25l[30m[48;5;250m6[39;49m[7;1H[?12l[?25h[?12;25h[?25l;[?12l[?25h[?12;25h[?25le[?12l[?25h[?12;25h[K[K[?25ll[?12l[?25h[?12;25h[?25le[?12l[?25h[?12;25h[?25lt[?12l[?25h[?12;25h[C[?25la[?12l[?25h[?12;25h[?25ld[?12l[?25h[?12;25h[?25ld[?12l[?25h[?12;25h	[?25l[38;5;130madd[39;49m=[?12l[?25h[?12;25h[?25l$[?12l[?25h[?12;25h[?25l[38;5;130m1[39;49m[?12l[?25h[?12;25h[?25l+[?12l[?25h[?12;25h[?25l$[?12l[?25h[?12;25h[?25l[38;5;130m2[39;49m[?12l[?25h[?12;25h[23;38H[?25l[30m[48;5;250m7[39;49m[8;1H[?12l[?25h[?12;25h[?25ll[?12l[?25h[?12;25h[?25le[?12l[?25h[?12;25h[?25lt[?12l[?25h[?12;25h[C[?25ls[?12l[?25h[?12;25h[?25lu[?12l[?25h[?12;25h[?25lb[?12l[?25h[?12;25h[?25l[38;5;130msub[39;49m=[?12l[?25h[?12;25h[?25l$[?12l[?25h[?12;25h[?25l[38;5;130m1[39;49m[?12l[?25h[?12;25h[?25l-[?12l[?25h[?12;25h[?25l$[?12l[?25h[?12;25h[?25l[38;5;130m2[39;49m[?12l[?25h[?12;25h[23;38H[?25l[30m[48;5;250m8[39;49m[9;1H[?12l[?25h[?12;25h[?25ll[?12l[?25h[?12;25h[?25le[?12l[?25h[?12;25h[?25lt[?12l[?25h[?12;25h[C[?25lm[?12l[?25h[?12;25h[?25lu[?12l[?25h[?12;25h[?25ll[?12l[?25h[?12;25h[?25l[38;5;130mmul[39;49m=[?12l[?25h[?12;25h[?25l$[?12l[?25h[?12;25h[?25l[38;5;130m1[39;49m[?12l[?25h[?12;25h[?25l*[?12l[?25h[?12;25h[?25l$[?12l[?25h[?12;25h[?25l[38;5;130m2[39;49m[?12l[?25h[?12;25h[23;38H[?25l[30m[48;5;250m9[39;49m[10;1H[?12l[?25h[?12;25h[?25ll[?12l[?25h[?12;25h[?25le[?12l[?25h[?12;25h[?25lt[?12l[?25h[?12;25h[C[?25ld[?12l[?25h[?12;25h[?25li[?12l[?25h[?12;25h[?25lv[?12l[?25h[?12;25h[?25l[38;5;130mdiv[39;49m=[?12l[?25h[?12;25h[?25l$[?12l[?25h[?12;25h[?25l[38;5;130m1[39;49m[?12l[?25h[?12;25h[?25l/[?12l[?25h[?12;25h[?25l$[?12l[?25h[?12;25h[?25l[38;5;130m2[39;49m[?12l[?25h[?12;25h[23;38H[?25l[30m[48;5;250m10[39;49m[11;1H[?12l[?25h[?12;25h[23;39H[?25l[30m[48;5;250m1[39;49m[12;1H[?12l[?25h[?12;25h[?25le[?12l[?25h[?12;25h[?25lc[?12l[?25h[?12;25h[?25lh[?12l[?25h[?12;25h[?25l[38;5;60mecho[39;49m[?12l[?25h[?12;25h[C[?25l-[?12l[?25h[?12;25h[?25le[?12l[?25h[?12;25h	[?25l[38;5;89m"[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mA[39;49m[?12l[?25h[?12;25h[?25l[38;5;89md[39;49m[?12l[?25h[?12;25h[?25l[38;5;89md[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mi[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mt[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mi[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mo[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mn[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m=[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m$[39;49m[?12l[?25h[?12;25h[?25l[38;5;89ma[39;49m[?12l[?25h[?12;25h[?25l[38;5;89md[39;49m[?12l[?25h[?12;25h[?25l[38;5;89md[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m\[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mn[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mS[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mu[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mb[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mt[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mr[39;49m[?12l[?25h[?12;25h[?25l[38;5;89ma[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mc[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mt[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mi[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mo[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mn[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m=[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m$[39;49m[?12l[?25h[?12;25h[?25l[38;5;89ms[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mu[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mb[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m\[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mn[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mM[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mu[39;49m[?12l[?25h[?12;25h[?25l[38;5;89ml[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mt[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mi[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mp[39;49m[?12l[?25h[?12;25h[?25l[38;5;89ml[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mi[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mc[39;49m[?12l[?25h[?12;25h[?25l[38;5;89ma[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mt[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mi[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mo[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mn[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m=[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m$[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mm[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mu[39;49m[?12l[?25h[?12;25h[?25l[38;5;89ml[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m\[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mn[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mD[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mi[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mv[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mi[39;49m[?12l[?25h[?12;25h[?25l[38;5;89ms[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mi[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mo[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mn[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m=[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m$[39;49m[?12l[?25h[?12;25h[?25l[38;5;89md[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mi[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mv[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m\[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mn[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m"[39;49m[?12l[?25h[?12;25h[23;39H[?25l[30m[48;5;250m2[39;49m[13;1H[?12l[?25h[?12;25h[24d[?25l[38;5;20mSave file /Users/20/bash_exs/arithmetic_ex.sh? (y, n, !, ., q, C-r, d or C-h) [39;49m[?12l[?25h[?12;25h[?25lSave file /Users/20/bash_exs/arithmetic_ex.sh? (y, n, !, ., q, C-r, d or C-h) y[?12l[?25h[?12;25h[24;4H[?25ling file /Users/20/bash_exs/arithmetic_ex.sh...[K[13;1H[?12l[?25h[?12;25h[24d[?25lWrote /Users/20/bash_exs/arithmetic_ex.sh[K[13;1H[?12l[?25h[?12;25h[24d[K[13d[24d[K[?1l>[?12l[?25h[?1049l[39;49mbash-3.2$ emacs arithmetic_ex.sh[C[C[C[C[C[C[C[C[C[C[9P./testscript2[C[C[C[C[C[C[C[C[C[Cemacs arithmetic_ex.sh[C[C[C[C[C[C[C[C[C[C[K./arithmetc.[K[K[Ktic.sh 12 10
+bash: ./arithmetic.sh: No such file or directory
+bash-3.2$ ./arithmetic.sh 12 10[C[1@_[1@e[1@x
+bash: ./arithmetic_ex.sh: Permission denied
+bash-3.2$ chmod +z[Kx arithmetic_ex.sh 
+bash-3.2$ chmod +x arithmetic_ex.sh [C[C[C[C[C[C[C[C[C[C[2P./arithmetic_ex.sh 12 10
+bash: ./arithmetic_ex.sh: /binbash: bad interpreter: No such file or directory
+bash-3.2$ ./arithmetic_ex.sh 12 10[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Krithmetic_ex.sh 12 1-[K-[K0
+bash: ./arithmetic_ex.sh: /binbash: bad interpreter: No such file or directory
+bash-3.2$ ./arithmetic_ex.sh 12 10[K[K[K[K[K[K
+bash: ./arithmetic_ex.sh: /binbash: bad interpreter: No such file or directory
+bash-3.2$ ls
+arithmetic_ex.sh	testscript2
+testscript		testscript2~
+bash-3.2$ ls./arithmetic_ex.sh
+bash: ./arithmetic_ex.sh: /binbash: bad interpreter: No such file or directory
+bash-3.2$ ./arithmetic_ex.sh[C[C[C[C[C[C[C[C[C[Cls[K./arithmetic_ex.sh 12 10[C[C[C[C[C[C[C[C[C[Cchmod +x arithmetic_ex.sh [C[C[C[C[C[C[C[C[C[C[2P./arithmetic_ex.sh 12 10[3P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cemacs arithmetic_ex.sh
+[?1049h[?12;25h[?1h=[H[2J[24d[K[?1l>[?12l[?25h[?1049l[39;49m[?1049h[?12;25h[?1h=[H[2J[>0c[H[2J[24d[K[H[?25l[7mFile Edit Options Buffers Tools Lisp-Interaction Help                           [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction) ----------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[24d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[H
+[?12l[?25h[?12;25h[24d[?25lSetting up indent for shell type binbash[K[H
+[?12l[?25h[?12;25h[24d[?25lIndentation variables are now local.[K[H
+[?12l[?25h[?12;25h[24;13H[?25lsetup for shell type binbash[H
+[?12l[?25h[?12;25h[24d[?25lIndentation setup for shell type binbash[K[H[7mFile Edit Options Buffers Tools Sh-Script Help                                  [0m[39;49m[27m
+[A
+[38;5;124m#!/[39;49m[38;5;129mbinbash[39;49m[38;5;124m                                                                      [39;49m
+[A
+[K
+[38;5;60mecho[39;49m -e [38;5;89m"\$1=$1"[39;49m[K
+[38;5;60mecho[39;49m -e [38;5;89m"\$2=$2"[39;49m[K
+[K
+let [38;5;130madd[39;49m=$[38;5;130m1[39;49m+$[38;5;130m2[39;49m[K
+let [38;5;130msub[39;49m=$[38;5;130m1[39;49m-$[38;5;130m2[39;49m[K
+let [38;5;130mmul[39;49m=$[38;5;130m1[39;49m*$[38;5;130m2[39;49m[K
+let [38;5;130mdiv[39;49m=$[38;5;130m1[39;49m/$[38;5;130m2[39;49m[K
+[K
+[38;5;60mecho[39;49m -e [38;5;89m"Addition=$add\nSubtraction=$sub\nMultiplication=$mul\nDivision=$div\n"[39;49m[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250marithmetic_ex.sh[0m[39;49m[30m[48;5;250m   All L1     (Shell-script[binbash]) -------------[39;49m
+[A[2d[?12l[?25h[?12;25h[24d[K[23;38H[?25l[30m[48;5;250m2[39;49m[H
+
+[?12l[?25h[?12;25h[23;38H[?25l[30m[48;5;250m3[39;49m[4;1H[?12l[?25h[?12;25h[23;38H[?25l[30m[48;5;250m2[39;49m[H
+
+[?12l[?25h[?12;25h[23;38H[?25l[30m[48;5;250m3[39;49m[4;1H[?12l[?25h[?12;25h[C[C[C[23;38H[?25l[30m[48;5;250m2[39;49m[H
+
+[?12l[?25h[?12;25h[23;38H[?25l[30m[48;5;250m1[39;49m[2;4H[?12l[?25h[?12;25h[24;1H[?25lBeginning of buffer[2;4H[?12l[?25h[?12;25h[24;1H[K[2;5H[C[C[?25l[38;5;124mbin/[39;49m[38;5;129mbash[39;49m[23;6H[30m[48;5;250m**[39;49m[2d[?12l[?25h[?12;25h[24;1H[?25l[38;5;20mSave file /Users/20/bash_exs/arithmetic_ex.sh? (y, n, !, ., q, C-r, d or C-h) [39;49m[?12l[?25h[?12;25h[?25lSave file /Users/20/bash_exs/arithmetic_ex.sh? (y, n, !, ., q, C-r, d or C-h) y[?12l[?25h[?12;25h[24;4H[?25ling file /Users/20/bash_exs/arithmetic_ex.sh...[K[2;8H[?12l[?25h[?12;25h[24;1H[?25lWrote /Users/20/bash_exs/arithmetic_ex.sh[K[2;8H[?12l[?25h[?12;25h[24;1H[K[2;8H[24;1H[K[?1l>[?12l[?25h[?1049l[39;49mbash-3.2$ emacs arithmetic_ex.sh[C[C[C[C[C[C[C[C[C[C[4P./arithmetic_ex.sh[C[C[C[C[C[C[C[C[C[Cls[K./arithmetic_ex.sh 12 10
+$1=12
+$2=10
+Addition=22
+Subtraction=2
+Multiplication=120
+Division=1
+
+bash-3.2$ ls
+arithmetic_ex.sh	testscript		testscript2~
+arithmetic_ex.sh~	testscript2
+bash-3.2$ emacs bash_script.sh
+[?1049h[?12;25h[?1h=[H[2J[24d[K[?1l>[?12l[?25h[?1049l[39;49m[?1049h[?12;25h[?1h=[H[2J[>0c[H[2J[24d[K[H[?25l[7mFile Edit Options Buffers Tools Lisp-Interaction Help                           [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction) ----------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[24d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[H
+[?12l[?25h[?12;25h[24d[?25l(New file)[K[H
+[?12l[?25h[?12;25h[24d[?25lSetting up indent for shell type sh[H
+[?12l[?25h[?12;25h[24d[?25lIndentation variables are now local.[H
+[?12l[?25h[?12;25h[24;13H[?25lsetup for shell type sh[K[H
+[?12l[?25h[?12;25h[24d[?25lIndentation setup for shell type sh[K[H[7mFile Edit Options Buffers Tools Sh-Script Help                                  [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250mbash_script.sh[0m[39;49m[30m[48;5;250m   All L1     (Shell-script[sh]) --------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[24d[K[2d[?25l[38;5;124m#[39;49m[23;6H[30m[48;5;250m**[39;49m[2;2H[?12l[?25h[?12;25h[?25l[38;5;124m![39;49m[?12l[?25h[?12;25h[?25l[38;5;124m/[39;49m[?12l[?25h[?12;25h[?25l[38;5;129mb[39;49m[?12l[?25h[?12;25h[?25l[38;5;129mi[39;49m[?12l[?25h[?12;25h[?25l[38;5;129mn[39;49m[?12l[?25h[?12;25h[?25l[38;5;129m/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124mbin/[39;49m[38;5;129mb[39;49m[?12l[?25h[?12;25h[?25l[38;5;129ma[39;49m[?12l[?25h[?12;25h[?25l[38;5;129ms[39;49m[?12l[?25h[?12;25h[?25l[38;5;129mh[39;49m[?12l[?25h[?12;25h[?25l[38;5;124m                                                                     [39;49m
+[23;36H[30m[48;5;250m2[39;49m[H
+
+[?12l[?25h[?12;25h[23;36H[?25l[30m[48;5;250m3[39;49m[4;1H[?12l[?25h[?12;25h[?25l$[?12l[?25h[?12;25h[?25l[38;5;130m1[39;49m[?12l[?25h[?12;25h[K[K[?25le[?12l[?25h[?12;25h[?25lc[?12l[?25h[?12;25h[?25lh[?12l[?25h[?12;25h[?25l[38;5;60mecho[39;49m[?12l[?25h[?12;25h[C[?25l-[?12l[?25h[?12;25h[?25le[?12l[?25h[?12;25h	[?25l[38;5;89m"[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m$[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m1[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m"[39;49m[?12l[?25h[?12;25h[23;36H[?25l[30m[48;5;250m4[39;49m[5;1H[?12l[?25h[?12;25h[?25le[?12l[?25h[?12;25h[?25lc[?12l[?25h[?12;25h[?25lh[?12l[?25h[?12;25h[?25l[38;5;60mecho[39;49m[?12l[?25h[?12;25h[C[?25l-[?12l[?25h[?12;25h[?25le[?12l[?25h[?12;25h	[?25l[38;5;89m"[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m$[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m2[39;49m[?12l[?25h[?12;25h[24;1H[?25lNo matching parenthesis found[5;12H[?12l[?25h[?12;25h[?25l[38;5;89m)[39;49m[?12l[?25h[?12;25h[24;1H[K[5;12H[K[?25l[38;5;89m"[39;49m[?12l[?25h[?12;25h[23;36H[?25l[30m[48;5;250m5[39;49m[6;1H[?12l[?25h[?12;25h[24d[?25l[38;5;20mSave file /Users/20/bash_exs/bash_script.sh? (y, n, !, ., q, C-r, d or C-h) [39;49m[?12l[?25h[?12;25h[?25lSave file /Users/20/bash_exs/bash_script.sh? (y, n, !, ., q, C-r, d or C-h) y[?12l[?25h[?12;25h[24;4H[?25ling file /Users/20/bash_exs/bash_script.sh...[K[6;1H[?12l[?25h[?12;25h[24d[?25lWrote /Users/20/bash_exs/bash_script.sh[K[6;1H[?12l[?25h[?12;25h[24d[K[6d[24d[K[?1l>[?12l[?25h[?1049l[39;49mbash-3.2$ chmod +x bash_script.sh 
+bash-3.2$ ./bash_script [K.sh 2 3
+2
+3
+bash-3.2$ ./bash_script.sh 2 3[K[K[K10 98
+10
+98
+bash-3.2$ emacs bash_s[Kexperimentation.sh
+[?1049h[?12;25h[?1h=[H[2J[24d[K[?1l>[?12l[?25h[?1049l[39;49m[?1049h[?12;25h[?1h=[H[2J[>0c[H[2J[24d[K[H[?25l[7mFile Edit Options Buffers Tools Lisp-Interaction Help                           [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction) ----------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[24d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[H
+[?12l[?25h[?12;25h[24d[?25l(New file)[K[H
+[?12l[?25h[?12;25h[24d[?25lSetting up indent for shell type sh[H
+[?12l[?25h[?12;25h[24d[?25lIndentation variables are now local.[H
+[?12l[?25h[?12;25h[24;13H[?25lsetup for shell type sh[K[H
+[?12l[?25h[?12;25h[24d[?25lIndentation setup for shell type sh[K[H[7mFile Edit Options Buffers Tools Sh-Script Help                                  [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250mbash_experimentation.sh[0m[39;49m[30m[48;5;250m   All L1     (Shell-script[sh]) -----------[39;49m
+[A[2d[?12l[?25h[?12;25h[24d[K[2d[?25l[38;5;124m#[39;49m[23;6H[30m[48;5;250m**[39;49m[2;2H[?12l[?25h[?12;25h[?25l[38;5;124m![39;49m[?12l[?25h[?12;25h[?25l[38;5;124m/[39;49m[?12l[?25h[?12;25h[?25l[38;5;129mb[39;49m[?12l[?25h[?12;25h[?25l[38;5;129mi[39;49m[?12l[?25h[?12;25h[?25l[38;5;129mn[39;49m[?12l[?25h[?12;25h[?25l[38;5;129m/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124mbin/[39;49m[38;5;129mb[39;49m[?12l[?25h[?12;25h[?25l[38;5;129ma[39;49m[?12l[?25h[?12;25h[?25l[38;5;129ms[39;49m[?12l[?25h[?12;25h[?25l[38;5;129mh[39;49m[?12l[?25h[?12;25h[?25l[38;5;124m                                                                     [39;49m
+[23;45H[30m[48;5;250m2[39;49m[H
+
+[?12l[?25h[?12;25h[23;45H[?25l[30m[48;5;250m3[39;49m[4;1H[?12l[?25h[?12;25h[?25le[?12l[?25h[?12;25h[?25lc[?12l[?25h[?12;25h[?25lh[?12l[?25h[?12;25h[?25l[38;5;60mecho[39;49m[?12l[?25h[?12;25h[C[?25l-[?12l[?25h[?12;25h[?25le[?12l[?25h[?12;25h	[?25l[38;5;89m"[39;49m[?12l[?25h[?12;25h[24;1H[?25lAuto-saving...[4;10H[?12l[?25h[?12;25h[24;15H[?25ldone[4;10H[?12l[?25h[?12;25h[24;1H[K[4;10H[?25l[38;5;89mT[39;49m[?12l[?25h[?12;25h[?25l[38;5;89me[39;49m[?12l[?25h[?12;25h[?25l[38;5;89ms[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mt[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mi[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mn[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mg[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m [39;49m[?12l[?25h[?12;25h[?25l[38;5;89m$[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m1[39;49m[?12l[?25h[?12;25h[K[K[?25l[38;5;89m\[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m$[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m1[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m [39;49m[?12l[?25h[?12;25h[?25l[38;5;89mi[39;49m[?12l[?25h[?12;25h[?25l[38;5;89ms[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m [39;49m[?12l[?25h[?12;25h[?25l[38;5;89m$[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m1[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m.[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m"[39;49m[?12l[?25h[?12;25h[23;45H[?25l[30m[48;5;250m4[39;49m[5;1H[?12l[?25h[?12;25h[?25le[?12l[?25h[?12;25h[?25lc[?12l[?25h[?12;25h[?25lh[?12l[?25h[?12;25h[?25l[38;5;60mecho[39;49m[?12l[?25h[?12;25h[C[?25l-[?12l[?25h[?12;25h[?25le[?12l[?25h[?12;25h	[?25l[38;5;89m"[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mT[39;49m[?12l[?25h[?12;25h[?25l[38;5;89me[39;49m[?12l[?25h[?12;25h[?25l[38;5;89ms[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mt[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mo[39;49m[?12l[?25h[?12;25h[K[?25l[38;5;89mi[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mn[39;49m[?12l[?25h[?12;25h[?25l[38;5;89mg[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m [39;49m[?12l[?25h[?12;25h[23;45H[?25l[30m[48;5;250m3[39;49m[4;18H[?12l[?25h[?12;25h[?25l[1@[38;5;89m;[39;49m[?12l[?25h[?12;25h[23;45H[?25l[30m[48;5;250m4[39;49m[5;17H[?12l[?25h[?12;25h[?25l[38;5;89m; [39;49m[?12l[?25h[?12;25h[C[?25l[38;5;89m\[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m$[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m2[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m [39;49m[?12l[?25h[?12;25h[?25l[38;5;89mi[39;49m[?12l[?25h[?12;25h[?25l[38;5;89ms[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m [39;49m[?12l[?25h[?12;25h[?25l[38;5;89m$[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m2[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m.[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m"[39;49m[?12l[?25h[?12;25h[23;45H[?25l[30m[48;5;250m5[39;49m[6;1H[?12l[?25h[?12;25h[1;23r[22;1H[1M[1;24r[24;1H[?25l[38;5;20m C-h) [39;49m[A[38;5;20mSave file /Users/20/bash_exs/bash_experimentation.sh? (y, n, !, ., q, C-r, d or[39;49m\
+[A
+	[?12l[?25h[?12;25h[?25l C-h) y[ASave file /Users/20/bash_exs/bash_experimentation.sh? (y, n, !, ., q, C-r, d or
+	[?12l[?25h[?12;25h[K[23;4H[?25ling file /Users/20/bash_exs/bash_experimentation.sh...[K[6;1H[?12l[?25h[?12;25h[23d[?25lWrote /Users/20/bash_exs/bash_experimentation.sh[K[6;1H[?12l[?25h[?12;25h[22d[K
+[?25l[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250mbash_experimentation.sh[0m[39;49m[30m[48;5;250m   All L5     (Shell-script[sh]) -----------[39;49m
+[6d[?12l[?25h[?12;25h[24d[K[?1l>[?12l[?25h[?1049l[39;49mbash-3.2$ emacs bash_experimentation.sh[C[C[C[C[C[C[C[C[C[C[7P./bash_script.sh 10 98[2P2 3[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kchmod +x bash_experimentation.sh 
+bash-3.2$ chmod +x bash_experimentation.sh [C[C[C[C[C[C[C[C[C[C[4Pemacs bash_experimentation.sh[C[C[C[C[C[C[C[C[C[Cchmod +x bash_experimentation.sh [C[C[C[C[C[C[C[C[C[C[K./bash_experimentation.sh 
+Testing; $1 is .
+Testing; $2 is .
+bash-3.2$ ./bash_experimentation.sh [C[C[C[C[C[C[C[C[C[C[7@chmod +x [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C2 3
+chmod: 2: No such file or directory
+chmod: 3: No such file or directory
+bash-3.2$ chmod +x bash_experimentation.sh 2 3[C[C[C[C[C[C[C[C[C[C[10P./bash_experimentation.sh 2 3
+Testing; $1 is 2.
+Testing; $2 is 3.
+bash-3.2$ cd ..
+bash-3.2$ ls
+2016-02-08.log
+Applications
+Desktop
+Documents
+Downloads
+Library
+Movies
+Music
+Pictures
+Public
+Vagrantfile
+Vagrantfile~
+VirtualBox VMs
+bash_exs
+holbertonschool-higher_level_programming
+python_exs
+bash-3.2$ ssh-keygen[K[K[K[K[K[K[K[K[K[Kvagrant init
+[0;31m`Vagrantfile` already exists in this directory. Remove it before
+running `vagrant init`.[0m
+bash-3.2$ vagrant up
+[0mBringing machine 'default' up with 'virtualbox' provider...[0m
+[1m==> default: Checking if box 'ubuntu/trusty64' is up to date...[0m
+[1;33m==> default: A newer version of the box 'ubuntu/trusty64' is available! You currently
+==> default: have version '20160108.0.0'. The latest is version '20160206.0.0'. Run
+==> default: `vagrant box update` to update.[0m
+[1m==> default: VirtualBox VM is already running.[0m
+bash-3.2$ vagrant ssh
+Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.13.0-74-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com/
+
+  System information as of Sun Feb  7 18:53:23 UTC 2016
+
+  System load:  0.0               Processes:           73
+  Usage of /:   4.2% of 39.34GB   Users logged in:     0
+  Memory usage: 28%               IP address for eth0: 10.0.2.15
+  Swap usage:   0%
+
+  Graph this data and manage this system at:
+    https://landscape.canonical.com/
+
+  Get cloud support with Ubuntu Advantage Cloud Guest:
+    http://www.ubuntu.com/business/services/cloud
+
+40 packages can be updated.
+24 updates are security updates.
+
+
+Last login: Sun Feb  7 18:53:25 2016 from 10.0.2.2
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ ls
+2016-02-07.log      [0m[01;34mcommand-line_log[0m
+2016-02-07-pt2.log  [01;34mholbertonschool-low_level_programming[0m
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ rm 2016-02-07.log
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ rm holbertonschool-low_level_programming/[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kmv holbertonschool-low_level_programming/ hollbertonschool-low_level_programming/[K_2[K[K_og
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ ssh-key[K[K[K[K[K[K[Kssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/vagrant/.ssh/id_rsa): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/vagrant/.ssh/id_rsa.
+Your public key has been saved in /home/vagrant/.ssh/id_rsa.pub.
+The key fingerprint is:
+81:95:6c:a8:c4:30:4d:a3:d0:96:5c:13:05:63:a2:d3 vagrant@vagrant-ubuntu-trusty-64
+The key's randomart image is:
++--[ RSA 2048]----+
+|.o+BX+.o..       |
+| +==++.o+        |
+|o.E. ....        |
+| .  .    .       |
+|        S        |
+|                 |
+|                 |
+|                 |
+|                 |
++-----------------+
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ ssh [K[K[K[Kgit config --global user.name "RonaC[K Chong"
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ git config --global user.email "ronachong@gm ail.com
+> "
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ eval $([K[K"$(ssh-agent -s)"
+Agent pid 19927
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ ssh-add ~/ssh/id_rsa
+/home/vagrant/ssh/id_rsa: No such file or directory
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ ls
+2016-02-07-pt2.log  [0m[01;34mcommand-line_log[0m  [01;34mholbertonschool-low_level_programming_og[0m
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ ls -a
+[0m[01;34m.[0m                   .bashrc           [01;34mholbertonschool-low_level_programming_og[0m
+[01;34m..[0m                  [01;34m.cache[0m            .profile
+2016-02-07-pt2.log  [01;34mcommand-line_log[0m  [01;34m.ssh[0m
+.bash_history       [01;34m.emacs.d[0m
+.bash_logout        .gitconfig
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ ssh-add ~/.ssh_id_rsa
+/home/vagrant/.ssh_id_rsa: No such file or directory
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ cd [K[K[Kls -s .[K[K[Kl .ssh/
+total 12
+-rw------- 1 vagrant vagrant  466 Feb  7 00:33 authorized_keys
+-rw------- 1 vagrant vagrant 1766 Feb  9 05:03 id_rsa
+-rw-r--r-- 1 vagrant vagrant  414 Feb  9 05:03 id_rsa.pub
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ ls -l .ssh/ssh-add ~/.ssh_id_rsa[1Pid_rsa/id_rsa
+Enter passphrase for /home/vagrant/.ssh/id_rsa: 
+Identity added: /home/vagrant/.ssh/id_rsa (/home/vagrant/.ssh/id_rsa)
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ pb copy[K[K[K[K[Kcopy < ~/.ssh/id_rsa.pub
+No command 'pbcopy' found, did you mean:
+ Command 'bcopy' from package 'bacula-sd-pgsql' (main)
+ Command 'bcopy' from package 'bacula-sd-sqlite3' (main)
+ Command 'bcopy' from package 'bacula-sd-mysql' (main)
+pbcopy: command not found
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ cat .[K~/.ssh/ir[Kd_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDT0c0QdBVEenkxevJxghWsyRguqvT0hbf5IZi/sHF/MZlOpRX4ByAicVUf6W3Jh5e4U5dx3Fa9GI9LhJSfn6z84Q9xLd2Hplga/mVckKpNFd/Vwi1DibpSvRlRZebqVW1iSwLKYVGx8eNbU7J/KSQve29ZYVa26Qurdh2xwj/YwfIAMhAwDXpkP/JqrMTGTNLxhUrHz9YhTfZn7b/3DfZdGI5Um2Nj9VlNCXS1/u0ROo1RUIDa1oDuvvdmlzOdo3rrA23lxDSwSsyQ6Qqe1a1oKZLYK8TaIidABnWkc/V4RUwqEtiUkfyD6fWoLH7DWtdYCYbH35UGK+ZR/HkBrbQ/ vagrant@vagrant-ubuntu-trusty-64
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ ls -l
+total 696
+-rw-rw-r-- 1 vagrant vagrant 700416 Feb  8 06:51 2016-02-07-pt2.log
+drwxrwxr-x 3 vagrant vagrant   4096 Feb  8 06:50 [0m[01;34mcommand-line_log[0m
+drwxrwxr-x 5 vagrant vagrant   4096 Feb  7 23:20 [01;34mholbertonschool-low_level_programming_og[0m
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ git lo[K[Kclone git@github.com:ronachong/holberton school-low_level_programming.git
+Cloning into 'holbertonschool-low_level_programming'...
+The authenticity of host 'github.com (192.30.252.128)' can't be established.
+RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'github.com,192.30.252.128' (RSA) to the list of known hosts.
+remote: Counting objects: 61, done.[K
+remote: Total 61 (delta 0), reused 0 (delta 0), pack-reused 61[K
+Receiving objects:   1% (1/61)   Receiving objects:   3% (2/61)   Receiving objects:   4% (3/61)   Receiving objects:   6% (4/61)   Receiving objects:   8% (5/61)   Receiving objects:   9% (6/61)   Receiving objects:  11% (7/61)   Receiving objects:  13% (8/61)   Receiving objects:  14% (9/61)   Receiving objects:  16% (10/61)   Receiving objects:  18% (11/61)   Receiving objects:  19% (12/61)   Receiving objects:  21% (13/61)   Receiving objects:  22% (14/61)   Receiving objects:  24% (15/61)   Receiving objects:  26% (16/61)   Receiving objects:  27% (17/61)   Receiving objects:  29% (18/61)   Receiving objects:  31% (19/61)   Receiving objects:  32% (20/61)   Receiving objects:  34% (21/61)   Receiving objects:  36% (22/61)   Receiving objects:  37% (23/61)   Receiving objects:  39% (24/61)   Receiving objects:  40% (25/61)   Receiving objects:  42% (26/61)   Receiving objects:  44% (27/61)   Receiving objects:  45% (28/61)   Receiving objects:  47% (29/61)   Receiving objects:  49% (30/61)   Receiving objects:  50% (31/61)   Receiving objects:  52% (32/61)   Receiving objects:  54% (33/61)   Receiving objects:  55% (34/61)   Receiving objects:  57% (35/61)   Receiving objects:  59% (36/61)   Receiving objects:  60% (37/61)   Receiving objects:  62% (38/61)   Receiving objects:  63% (39/61)   Receiving objects:  65% (40/61)   Receiving objects:  67% (41/61)   Receiving objects:  68% (42/61)   Receiving objects:  70% (43/61)   Receiving objects:  72% (44/61)   Receiving objects:  73% (45/61)   Receiving objects:  75% (46/61)   Receiving objects:  77% (47/61)   Receiving objects:  78% (48/61)   Receiving objects:  80% (49/61)   Receiving objects:  81% (50/61)   Receiving objects:  83% (51/61)   Receiving objects:  85% (52/61)   Receiving objects:  86% (53/61)   Receiving objects:  88% (54/61)   Receiving objects:  90% (55/61)   Receiving objects:  91% (56/61)   Receiving objects:  93% (57/61)   Receiving objects:  95% (58/61)   Receiving objects:  96% (59/61)   Receiving objects:  98% (60/61)   Receiving objects: 100% (61/61)   Receiving objects: 100% (61/61), 9.16 KiB | 0 bytes/s, done.
+Resolving deltas:   0% (0/24)   Resolving deltas:  41% (10/24)   Resolving deltas:  79% (19/24)   Resolving deltas:  83% (20/24)   Resolving deltas:  91% (22/24)   Resolving deltas: 100% (24/24)   Resolving deltas: 100% (24/24), done.
+Checking connectivity... done.
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ ls -l
+total 700
+-rw-rw-r-- 1 vagrant vagrant 700416 Feb  8 06:51 2016-02-07-pt2.log
+drwxrwxr-x 3 vagrant vagrant   4096 Feb  8 06:50 [0m[01;34mcommand-line_log[0m
+drwxrwxr-x 5 vagrant vagrant   4096 Feb  9 05:09 [01;34mholbertonschool-low_level_programming[0m
+drwxrwxr-x 5 vagrant vagrant   4096 Feb  7 23:20 [01;34mholbertonschool-low_level_programming_og[0m
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ cd holbertonschool-low_level_programming
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/holbertonschool-low_level_programmingvagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming$ ls -l
+total 12
+drwxrwxr-x 2 vagrant vagrant 4096 Feb  9 05:09 [0m[01;34mhello_world[0m
+drwxrwxr-x 2 vagrant vagrant 4096 Feb  9 05:09 [01;34mi_m_not_in_the_loop[0m
+-rw-rw-r-- 1 vagrant vagrant   39 Feb  9 05:09 README.md
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/holbertonschool-low_level_programmingvagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming$ cd i_m [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[Kl
+[0m[01;34mhello_world[0m/  [01;34mi_m_not_in_the_loop[0m/  README.md
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/holbertonschool-low_level_programmingvagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming$ cd helllo_world/
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/holbertonschool-low_level_programming/hello_worldvagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/hello_woorld$ ls
+0-hello_puts.c  1-hello_Wall.c  2-hello_printf.c  3-hello_write.c
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/holbertonschool-low_level_programming/hello_worldvagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/hello_woorld$ ^C
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/holbertonschool-low_level_programming/hello_worldvagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/hello_woorld$ 
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/holbertonschool-low_level_programming/hello_worldvagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/hello_woorld$ 
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/holbertonschool-low_level_programming/hello_worldvagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/hello_woorld$ [H[2J]0;vagrant@vagrant-ubuntu-trusty-64: ~/holbertonschool-low_level_programming/hello_worldvagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/hello_woorld$ lscd hello_world/[C[C[C[C[C[Cl[Ks -lcd holbertonschool-low_level_programming[C[C[C[C[C[Cls -l[Kgit clone git@github.com:ronachong/holbertonschool-low_level_programming.giit[A[C[C[C[Cls -l[K
+[K[A[C[C[C[C[C[C[C[C[C[C[Ccd holbertonschool-low_level_programming[C[C[C[C[C[Cls -l[K[Kcd hello_world/[C[C[C[C[C[Cls[K[Kq[Kexit
+logout
+Connection to 127.0.0.1 closed.
+bash-3.2$ fff[K[K[Kvagrant ssh
+Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.13.0-74-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com/
+
+  System information as of Tue Feb  9 05:02:06 UTC 2016
+
+  System load:  0.0               Processes:           81
+  Usage of /:   6.3% of 39.34GB   Users logged in:     0
+  Memory usage: 34%               IP address for eth0: 10.0.2.15
+  Swap usage:   0%
+
+  Graph this data and manage this system at:
+    https://landscape.canonical.com/
+
+  Get cloud support with Ubuntu Advantage Cloud Guest:
+    http://www.ubuntu.com/business/services/cloud
+
+40 packages can be updated.
+24 updates are security updates.
+
+
+Last login: Tue Feb  9 05:02:09 2016 from 10.0.2.2
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ ls
+2016-02-07-pt2.log  [0m[01;34mholbertonschool-low_level_programming[0m
+[01;34mcommand-line_log[0m    [01;34mholbertonschool-low_level_programming_og[0m
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ cd holbertonschool-low_level_programming
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/holbertonschool-low_level_programmingvagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming$ ls
+[0m[01;34mhello_world[0m  [01;34mi_m_not_in_the_loop[0m  README.md
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/holbertonschool-low_level_programmingvagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming$ cd i_m__not_in_the_loop/
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/holbertonschool-low_level_programming/i_m_not_in_the_loopvagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/i_m_not__in_the_loop$ cd i_m_not_in_the_loop/[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kcd holbertonschool-low_level_programming[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kcd i_m_not_in_the_loop/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/holbertonschool-low_level_programming/i_m_not_in_the_loopvagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/i_m_not__in_the_loop$ asjsdjklsajdajkldj[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kls
+0-main.c            2-print_tebahpla.c   5-main.c          [0m[01;32mtebahpla[0m
+0-print_z.c         3-main.c             5-print_number.c  [01;32mz[0m
+1-main.c            3-print_base16.c     [01;32malphabet[0m
+1-print_alphabet.c  4-main.c             my_functions.h
+2-main.c            4-positive_or_not.c  print_char.c
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/holbertonschool-low_level_programming/i_m_not_in_the_loopvagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/i_m_not__in_the_loop$ ls -l
+total 92
+-rw-rw-r-- 1 vagrant vagrant   73 Feb  9 05:09 0-main.c
+-rw-rw-r-- 1 vagrant vagrant   89 Feb  9 05:09 0-print_z.c
+-rw-rw-r-- 1 vagrant vagrant   80 Feb  9 05:09 1-main.c
+-rw-rw-r-- 1 vagrant vagrant  126 Feb  9 05:09 1-print_alphabet.c
+-rw-rw-r-- 1 vagrant vagrant   80 Feb  9 05:09 2-main.c
+-rw-rw-r-- 1 vagrant vagrant  123 Feb  9 05:09 2-print_tebahpla.c
+-rw-rw-r-- 1 vagrant vagrant   78 Feb  9 05:09 3-main.c
+-rw-rw-r-- 1 vagrant vagrant  243 Feb  9 05:09 3-print_base16.c
+-rw-rw-r-- 1 vagrant vagrant  174 Feb  9 05:09 4-main.c
+-rw-rw-r-- 1 vagrant vagrant  180 Feb  9 05:09 4-positive_or_not.c
+-rw-rw-r-- 1 vagrant vagrant  263 Feb  9 05:09 5-main.c
+-rw-rw-r-- 1 vagrant vagrant  625 Feb  9 05:09 5-print_number.c
+-rwxrwxr-x 1 vagrant vagrant 8707 Feb  9 05:09 [0m[01;32malphabet[0m
+-rw-rw-r-- 1 vagrant vagrant  424 Feb  9 05:09 my_functions.h
+-rw-rw-r-- 1 vagrant vagrant   76 Feb  9 05:09 print_char.c
+-rwxrwxr-x 1 vagrant vagrant 8707 Feb  9 05:09 [01;32mtebahpla[0m
+-rwxrwxr-x 1 vagrant vagrant 8693 Feb  9 05:09 [01;32mz[0m
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/holbertonschool-low_level_programming/i_m_not_in_the_loopvagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/i_m_not__in_the_loop$ rm alphabet 
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/holbertonschool-low_level_programming/i_m_not_in_the_loopvagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/i_m_not__in_the_loop$ rm tebahpla 
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/holbertonschool-low_level_programming/i_m_not_in_the_loopvagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/i_m_not__in_the_loop$ rm z
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/holbertonschool-low_level_programming/i_m_not_in_the_loopvagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/i_m_not__in_the_loop$ ls -l
+total 56
+-rw-rw-r-- 1 vagrant vagrant  73 Feb  9 05:09 0-main.c
+-rw-rw-r-- 1 vagrant vagrant  89 Feb  9 05:09 0-print_z.c
+-rw-rw-r-- 1 vagrant vagrant  80 Feb  9 05:09 1-main.c
+-rw-rw-r-- 1 vagrant vagrant 126 Feb  9 05:09 1-print_alphabet.c
+-rw-rw-r-- 1 vagrant vagrant  80 Feb  9 05:09 2-main.c
+-rw-rw-r-- 1 vagrant vagrant 123 Feb  9 05:09 2-print_tebahpla.c
+-rw-rw-r-- 1 vagrant vagrant  78 Feb  9 05:09 3-main.c
+-rw-rw-r-- 1 vagrant vagrant 243 Feb  9 05:09 3-print_base16.c
+-rw-rw-r-- 1 vagrant vagrant 174 Feb  9 05:09 4-main.c
+-rw-rw-r-- 1 vagrant vagrant 180 Feb  9 05:09 4-positive_or_not.c
+-rw-rw-r-- 1 vagrant vagrant 263 Feb  9 05:09 5-main.c
+-rw-rw-r-- 1 vagrant vagrant 625 Feb  9 05:09 5-print_number.c
+-rw-rw-r-- 1 vagrant vagrant 424 Feb  9 05:09 my_functions.h
+-rw-rw-r-- 1 vagrant vagrant  76 Feb  9 05:09 print_char.c
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/holbertonschool-low_level_programming/i_m_not_in_the_loopvagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/i_m_not__in_the_loop$ ls -l[Kemacs 0-print_z.c 
+[?1049h[?12;25h[?1h=[H[2J[24d[K[?1l>[?12l[?25h[?1049l[39;49m[?1049h[?12;25h[?1h=[H[2J[23d[?25l-UUU:----F1  [1m*scratch*   [0m   All L1     (Fundamental) ---------------------------
+[A[2d[?12l[?25h[?12;25h[24d[?25lLoading 00debian-vars...[K[H
+[?12l[?25h[?12;25h[24;25H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[24d[?25lLoading 00debian-vars...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                           [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction) ----------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[24d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[H
+[?12l[?25h[?12;25h[24d[?25lLoading cc-langs...[K[H
+[?12l[?25h[?12;25h[24;20H[?25ldone[H
+[?12l[?25h[?12;25h[24;9H[?25lvc-git...[K[H
+[?12l[?25h[?12;25h[24;18H[?25ldone[H
+[?12l[?25h[?12;25h[24d[?25lLoading vc-git...done[K[H[7mFile Edit Options Buffers Tools C Help                                          [0m[39;49m[27m
+[A
+[38;5;60m#include[39;49m [38;5;89m"my_functions.h"[39;49m[K
+[K
+[38;5;28mvoid[39;49m [38;5;21mprint_z[39;49m([38;5;28mvoid[39;49m) {[K
+  print_char([38;5;89m'z'[39;49m);[K
+  print_char([38;5;89m'\n'[39;49m);[K
+}[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250m0-print_z.c [0m[39;49m[30m[48;5;250m   All L1    Git-master  (C/l Abbrev) -----------------[39;49m
+[A[2d[?12l[?25h[?12;25h[24d[K[23;34H[?25l[30m[48;5;250m2[39;49m[H
+
+[?12l[?25h[?12;25h[23;34H[?25l[30m[48;5;250m3[39;49m[4;1H[?12l[?25h[?12;25h[23;34H[?25l[30m[48;5;250m4[39;49m[5;1H[?12l[?25h[?12;25h[23;34H[?25l[30m[48;5;250m5[39;49m[6;1H[?12l[?25h[?12;25h[23;34H[?25l[30m[48;5;250m6[39;49m[7;1H[?12l[?25h[?12;25h[23;34H[?25l[30m[48;5;250m7[39;49m[8;1H[?12l[?25h[?12;25h[24d[?25lEnd of buffer[8;1H[?12l[?25h[?12;25h[24d[K[23;34H[?25l[30m[48;5;250m6[39;49m[7;1H[?12l[?25h[?12;25h[23;34H[?25l[30m[48;5;250m5[39;49m[6;1H[?12l[?25h[?12;25h[23;34H[?25l[30m[48;5;250m4[39;49m[5;1H[?12l[?25h[?12;25h[23;34H[?25l[30m[48;5;250m3[39;49m[4;1H[?12l[?25h[?12;25h[23;34H[?25l[30m[48;5;250m2[39;49m[H
+
+[?12l[?25h[?12;25h[23;34H[?25l[30m[48;5;250m1[39;49m[H
+[?12l[?25h[?12;25h[23;34H[?25l[30m[48;5;250m2[39;49m[H
+
+[?12l[?25h[?12;25h[1;8r[4;1H[1L[1;24r[4;1H[K[23;6H[?25l[30m[48;5;250m**--F1  [39;49m[1m[30m[48;5;250m0-print_z.c [0m[39;49m[30m[48;5;250m   All L3[39;49m[4;1H[?12l[?25h[?12;25h[1;9r[5;1H[1L[1;24r[5;1H[K[23;34H[?25l[30m[48;5;250m4[39;49m[5;1H[?12l[?25h[?12;25h[23;34H[?25l[30m[48;5;250m3[39;49m[4;1H[?12l[?25h[?12;25h[23;34H[?25l[30m[48;5;250m2[39;49m[H
+
+[?12l[?25h[?12;25h[23;34H[?25l[30m[48;5;250m3[39;49m[4;1H[?12l[?25h[?12;25h[?25l/[?12l[?25h[?12;25h[?25l[38;5;124m/*                                                                              [39;49m
+[38;5;124m                                                                                [39;49m
+[4;3H[?12l[?25h[?12;25h
+
+[?25l[38;5;124mvoid print_z(void) {                                                            [39;49m
+[38;5;124m  print_char('z');                                                              [39;49m
+[38;5;124m  print_char('\n');                                                             [39;49m
+[38;5;124m}                                                                               [39;49m
+[4;3H[?12l[?25h[?12;25h[C[C[C[C[C[?25l[38;5;124m*[39;49m[?12l[?25h[?12;25h[?25l[38;5;124m/[39;49m[K
+[K[4;6H[?12l[?25h[?12;25h
+
+[?25l[38;5;28mvoid[39;49m [38;5;21mprint_z[39;49m([38;5;28mvoid[39;49m) {[K
+  print_char([38;5;89m'z'[39;49m);[K
+  print_char([38;5;89m'\n'[39;49m);[K
+}[K[4;6H[?12l[?25h[?12;25h[C[?25l[38;5;124mP*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124mr*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124mi*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124mn*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124mt*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124m*/[39;49m[K[?12l[?25h[?12;25h[?25l[38;5;124m*/[39;49m[K[?12l[?25h[?12;25h[?25l[38;5;124m*/[39;49m[K[?12l[?25h[?12;25h[?25l[38;5;124m*/[39;49m[K[?12l[?25h[?12;25h[?25l[38;5;124m*/[39;49m[K[?12l[?25h[?12;25h[?25l[38;5;124mp*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124mr*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124mi*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124mn*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124mt*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124m_*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124mz*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124m(*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124m)*/[39;49m[?12l[?25h[?12;25h[4;13H[?25l[38;5;124m */[39;49m[?12l[?25h[?12;25h[?25l[38;5;124mc*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124ma*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124ml*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124ml*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124ms*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124m */[39;49m[?12l[?25h[?12;25h[?25l[38;5;124mp*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124mr*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124mi*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124mn*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124mt*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124m_*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124mx*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124m*/[39;49m[K[?12l[?25h[?12;25h[?25l[38;5;124mc*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124mh*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124ma*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124mr*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124m(*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124m)*/[39;49m[?12l[?25h[?12;25h	[?25l[38;5;124m */[39;49m[?12l[?25h[?12;25h[?25l[38;5;124mt*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124mo*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124m */[39;49m[?12l[?25h[?12;25h[?25l[38;5;124mp*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124mr*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124mi*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124mn*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124mt*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124m */[39;49m[?12l[?25h[?12;25h[?25l[38;5;124mt*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124mh*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124me*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124m */[39;49m[?12l[?25h[?12;25h[?25l[38;5;124mc*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124mh*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124ma*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124mr*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124ma*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124m*/[39;49m[K[?12l[?25h[?12;25h[?25l[38;5;124m*/[39;49m[K[?12l[?25h[?12;25h[?25l[38;5;124m*/[39;49m[K[?12l[?25h[?12;25h[?25l[38;5;124m*/[39;49m[K[?12l[?25h[?12;25h[?25l[38;5;124m*/[39;49m[K[?12l[?25h[?12;25h[?25l[38;5;124m*/[39;49m[K[?12l[?25h[?12;25h[?25l[38;5;124m*/[39;49m[K[?12l[?25h[?12;25h[?25l[38;5;124m*/[39;49m[K[?12l[?25h[?12;25h[?25l[38;5;124m*/[39;49m[K[?12l[?25h[?12;25h[?25l[38;5;124m*/[39;49m[K[?12l[?25h[?12;25h[1;10r[6;1H[1L[1;24r[4;41H[?25l[38;5;124m                                        [39;49m
+[38;5;124m*/[39;49m
+[K[23;34H[30m[48;5;250m4[39;49m[5;1H[?12l[?25h[?12;25h[23;34H[?25l[30m[48;5;250m3[39;49m[4;1H[?12l[?25h[?12;25h[C[C[C[C[C[C		[C[C[C[C[C[C		[C[C[C[C[C[C		[C[C[C[C[C[C		[C[C[C[C[C[C		[23;34H[?25l[30m[48;5;250m4[39;49m[5;1H[?12l[?25h[?12;25h[?25l[38;5;124mt*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124mh*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124me*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124m */[39;49m[?12l[?25h[?12;25h[?25l[38;5;124mc*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124mh*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124ma*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124mr*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124ma*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124mz*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124m*/[39;49m[K[?12l[?25h[?12;25h[?25l[38;5;124mc*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124mt*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124me*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124mr*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124m */[39;49m[?12l[?25h[?12;25h[?25l[38;5;124m'*/[39;49m[?12l[?25h[?12;25h[24;1H[?25lAuto-saving...[5;16H[?12l[?25h[?12;25h[24;15H[?25ldone[5;16H[?12l[?25h[?12;25h[24;1H[K[5;16H[?25l[38;5;124mz*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124m'*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124m,*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124m */[39;49m[?12l[?25h[?12;25h[?25l[38;5;124mf*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124mo*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124ml*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124ml*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124mo*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124mw*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124me*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124md*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124m */[39;49m[?12l[?25h[?12;25h[?25l[38;5;124mb*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124my*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124m */[39;49m[?12l[?25h[?12;25h[?25l[38;5;124ma*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124m */[39;49m[?12l[?25h[?12;25h[?25l[38;5;124mn*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124me*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124mw*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124m */[39;49m[?12l[?25h[?12;25h[?25l[38;5;124ml*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124mi*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124mn*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124me*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124m.*/[39;49m[?12l[?25h[?12;25h[?25l[38;5;124m */[39;49m[?12l[?25h[?12;25h[1;23r[22;1H[1M[1;24r[24;1H[?25l[38;5;20mop/0-print_z.c? (y, n, !, ., q, C-r, d or C-h) [39;49m[A[38;5;20mSave file /home/vagrant/holbertonschool-low_level_programming/i_m_not_in_the_lo[39;49m\
+[A[24;48H[?12l[?25h[?12;25h[?25lop/0-print_z.c? (y, n, !, ., q, C-r, d or C-h) y[ASave file /home/vagrant/holbertonschool-low_level_programming/i_m_not_in_the_lo[24;49H[?12l[?25h[?12;25h[?25lloop/0-print_z.c...[K[23;4Hing file /home/vagrant/holbertonschool-low_level_programming/i_m_not_in_the_[5;44H[?12l[?25h[?12;25h[24;1H[?25l-print_z.c[K[AWrote /home/vagrant/holbertonschool-low_level_programming/i_m_not_in_the_loop/0[5;44H[?12l[?25h[?12;25h[24;1H[K[22d[K
+[?25l[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250m0-print_z.c [0m[39;49m[30m[48;5;250m   All L4    Git:master  (C/l Abbrev) -----------------[39;49m
+[5;44H[?12l[?25h[?12;25h[24;1H[K[?1l>[?12l[?25h[?1049l[39;49m]0;vagrant@vagrant-ubuntu-trusty-64: ~/holbertonschool-low_level_programming/i_m_not_in_the_loopvagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/i_m_not__in_the_loop$ gcc -Wall -Werror -Wextra -pedantic 0-main.c 0-print_z.c print_cha r.c -o z
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/holbertonschool-low_level_programming/i_m_not_in_the_loopvagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/i_m_not__in_the_loop$ 
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/holbertonschool-low_level_programming/i_m_not_in_the_loopvagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/i_m_not__in_the_loop$ 
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/holbertonschool-low_level_programming/i_m_not_in_the_loopvagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/i_m_not__in_the_loop$ exit
+logout
+Connection to 127.0.0.1 closed.
+bash-3.2$ exit
+exit
+
+Script done on Mon Feb  8 23:35:09 2016
